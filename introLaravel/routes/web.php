@@ -11,6 +11,10 @@ Route::get('/', function () {
 
 */
 
-Route::view('/','welcome');
+Route::view('/','inicio')->name('rutainicio');
 
-Route::view('/formulario','formulario');
+Route::view('/form','formulario')->name('rutacacas');
+
+Route::view('/consultar','clientes')->name('rutaconsulta');
+
+Route::view('/component','componentes')->name('rutacomponent');
