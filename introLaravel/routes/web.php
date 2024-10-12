@@ -8,8 +8,16 @@ use App\Http\Controllers\controladorVistas;
 /* rutas para trabajar con el controlador */
 
 Route::get('/',[controladorVistas::class,'home' ])->name('rutainicio');
+
 Route::get('/form',[controladorVistas::class,'insert' ])->name('rutacacas');
+
 Route::get('/consultar',[controladorVistas::class,'select' ])->name('rutaconsulta');
+
+
+Route::view('/component','componentes')->name('rutacomponent');
+
+
+
 
 
 
@@ -19,5 +27,3 @@ Route::get('/consultar',[controladorVistas::class,'select' ])->name('rutaconsult
 Route::view('/form','formulario')->name('rutacacas');
 
 Route::view('/consultar','clientes')->name('rutaconsulta'); */
-
-Route::view('/component','componentes')->name('rutacomponent');
